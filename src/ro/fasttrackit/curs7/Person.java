@@ -3,8 +3,8 @@ package ro.fasttrackit.curs7;
 public class Person {
 
     String name;
-    int age;
-    boolean married;
+    public int age;
+    public boolean married;
 
     public Person(String name, int age, boolean married) {
         this.name = name;
@@ -14,6 +14,7 @@ public class Person {
     }
 
     public String getName() {
+
         return name;
     }
 
@@ -22,6 +23,7 @@ public class Person {
     }
 
     public boolean isMarried() {
+
         return married;
     }
 

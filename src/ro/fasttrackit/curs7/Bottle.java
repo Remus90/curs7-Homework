@@ -1,9 +1,9 @@
 package ro.fasttrackit.curs7;
 
 public class Bottle {
-    int totalCapacity;
-    int availableLiquid;
-    boolean open;
+    private int totalCapacity;
+    private int availableLiquid;
+    private boolean open;
 
     public Bottle(int totalCapacity, int availableLiquid, boolean open) {
         this.totalCapacity = totalCapacity;
@@ -13,15 +13,17 @@ public class Bottle {
 
     public boolean moreLiquid() {
         if (availableLiquid > totalCapacity) {
-        }
-        return false;
+            return true;
+        } else return false;
     }
 
     public int getAvailableLiquid() {
+
         return availableLiquid;
     }
 
     public int emptyCapacity() {
+
         return totalCapacity - availableLiquid;
     }
 
@@ -53,5 +55,6 @@ public class Bottle {
         System.out.println(Bottle1.moreLiquid());
         System.out.println(Bottle1.getAvailableLiquid());
         System.out.println(Bottle1.emptyCapacity());
+        System.out.println(Bottle1.closeBottle());
     }
 }

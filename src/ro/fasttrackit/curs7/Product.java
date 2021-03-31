@@ -1,10 +1,10 @@
 package ro.fasttrackit.curs7;
 
 public class Product {
-    String name;
-    int price;
-    int quantity;
-    String category;
+    public String name;
+    public int price;
+    public int quantity;
+    public String category;
 
     public Product(int quantity, String category) {
         this.quantity = quantity;
@@ -12,18 +12,22 @@ public class Product {
     }
 
     String getName() {
+
         return name;
     }
 
     int getPrice() {
+
         return price;
     }
 
     int getQuantity() {
+
         return quantity;
     }
 
     String getCategory() {
+
         return category;
     }
 
@@ -35,7 +39,7 @@ public class Product {
     }
 
     public boolean isCategory(String category) {
-        if (this.category == category) {
+        if (this.category.equals(category)) {
             return true;
 
         } else return false;
