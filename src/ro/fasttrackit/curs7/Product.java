@@ -53,6 +53,7 @@ public class Product {
         Product newProduct3 = new Product(0, "Fotbal");
         System.out.println(newProduct3.hasStock());
         System.out.println(newProduct3.isCategory("Baschet"));
+        //remus
 
 
     }
