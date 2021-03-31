@@ -32,9 +32,7 @@ public class Product {
     }
 
     public boolean hasStock() {
-        if (this.quantity > 0) {
-            return true;
-        } else return false;
+        return quantity > 0;
 
     }
 
